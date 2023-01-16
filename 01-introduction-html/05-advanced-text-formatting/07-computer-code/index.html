@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let f = async (url) => {
+        let res = await fetch(url);
+        let user = await res.json();
+
+        console.log(user);
+      };
+
+      f("https://api.github.com/users/octopus");
+    </script>
+    <p>async function example</p>
+    <pre>
+        <code>
+            f = async(url) =&gt; {
+            let res = await fetch(url);
+            let user = await res.json();
+
+            console.log(user)
+            }
+
+            f("https://api.github.com/users/octopus")
+        </code>
+
+    </pre>
+    <p><var>f</var> - a variable, that contains an async function</p>
+    <p>Select all code and copy with <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+    <pre><kbd>$ ls -a</kbd></pre>
+    <samp
+      >01-introduction-html 02-multimedia-embedding 03-html-tables 04-web-forms
+      cheatsheet-emmet.pdf learning-area</samp
+    >
+  </body>
+</html>

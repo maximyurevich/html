@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "start": "deno run -A 04-web-forms/server.js",
+  }
+}

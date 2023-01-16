@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <label for="myFruit">What's your favourite fruit? (With fallback)</label>
+    <input type="text" name="fruit" id="myFruit" list="fruitList" />
+
+    <datalist id="fruitList">
+      <label for="suggestion">or pick fruit</label>
+      <select id="suggestion" name="altFruit">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Blackberry</option>
+        <option>Blueberry</option>
+        <option>Lemon</option>
+        <option>Lychee</option>
+        <option>Peach</option>
+        <option>Pear</option>
+      </select>
+    </datalist>
+  </body>
+</html>
